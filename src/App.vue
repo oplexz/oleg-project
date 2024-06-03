@@ -21,7 +21,9 @@
                     </label>
                 </div>
                 <div class="flex justify-between w-full">
-                    <RouterLink to="/" class="btn btn-ghost text-xl">Красный Октябрь</RouterLink>
+                    <RouterLink to="/" class="btn btn-ghost text-xl">
+                        <img :src="'krasniy-oktyabr.svg'" alt="Красный Октябрь" class="h-12" />
+                    </RouterLink>
                     <div class="hidden lg:block">
                         <div class="menu menu-horizontal gap-2">
                             <RouterLink to="/about" class="btn">О нас</RouterLink>
@@ -36,13 +38,11 @@
                     </div>
                 </div>
             </div>
-            <!-- Page content here -->
             <RouterView />
         </div>
         <div class="drawer-side">
             <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
             <ul class="menu p-4 w-80 min-h-full bg-base-200">
-                <!-- Sidebar content here -->
                 <li><RouterLink to="/about">О нас</RouterLink></li>
                 <li><RouterLink to="/products">Продукция</RouterLink></li>
                 <li><RouterLink to="/store">Магазин</RouterLink></li>
